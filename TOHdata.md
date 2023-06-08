@@ -565,7 +565,7 @@ CALGARY, ALBERTA
 <br><br>
 <b>Chiu M,</b> Cherry R, Levy A. Debriefing Techniques for Simulation-Based Education. Royal College of Physicians and Surgeons of Canada Simulation Educator Training Course. February 2022 
 <br><br>
-Tavares W, <b>Chiu M,</b> Clark M. Conceptual Frameworks Informing Simulation Education and Assessment. Royal College of Physicians and Surgeons of Canada Simulation Educator Training Course. February 2022 CALGARY
+Tavares W, <b>Chiu M,</b> Clark M. Conceptual Frameworks Informing Simulation Education and Assessment. Royal College of Physicians and Surgeons of Canada Simulation Educator Training Course. February 2022 
 
 ===============================
 NEW ORLEANS, LOUISIANA
