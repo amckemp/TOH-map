@@ -194,6 +194,8 @@ for (let marker in allMarkers){
         const sidebarText = document.querySelector('.sidebarText');
         sidebarText.innerHTML = markerText[marker];
         sidebarText.classList.add('textAlignLeft');
+        sidebarText.style.color = 'black';
+        sidebarText.style.fontWeight = '400';
         allMarkers[marker].setIcon(greyIcon);
 
         document.body.scrollTop = document.documentElement.scrollTop = 0;

@@ -48,6 +48,8 @@ body{
     padding: 3%;
     padding-top: 0;
     text-align: center;
+    color: rgb(156, 36, 26);
+    font-weight: 600;
 }
 
 body .textAlignLeft {
