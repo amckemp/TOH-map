@@ -1,6 +1,5 @@
 var map = L.map('map');
 map.setView([35, 0], 2.45);
-
 L.tileLayer('https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=2uBtXXP0tRIYtS0qaZR3', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
 
 
@@ -186,7 +185,7 @@ let markerText = {
 for (let marker in allMarkers){
     allMarkers[marker]._icon.style.filter = "hue-rotate(10deg)";
 
-    allMarkers[marker].on('click', function () {
+    allMarkers[marker].on('click', function (e) {
         for (let marker in allMarkers){
             allMarkers[marker].setIcon(redIcon);
         }
@@ -199,17 +198,8 @@ for (let marker in allMarkers){
         allMarkers[marker].setIcon(greyIcon);
 
         document.body.scrollTop = document.documentElement.scrollTop = 0;
-
-    });
-
-    allMarkers[marker].on('mouseover', function (e) {
-        this.openPopup();
-    });
-    allMarkers[marker].on('mouseout', function (e) {
-        this.closePopup();
-    });
-
-    
+        
+    });   
 }
 
 markerToronto.bindPopup('Toronto, Ontario');
@@ -250,3 +240,36 @@ markerBoston.bindPopup('Boston, Massachusetts');
 markerSanDiego.bindPopup('San Diego, California');
 markerCalgary.bindPopup('Calgary, Alberta');
 markerNewOrleans.bindPopup('New Orleans, Louisiana');
+
+
+function popupType (){
+
+    var size = window.innerWidth;
+
+    if (size > 1085){
+
+        map.setView([35, 0], 2.45);
+        
+        for (let marker in allMarkers){
+            allMarkers[marker].on('mouseover', function (e) {
+                this.openPopup();
+            });
+
+            allMarkers[marker].on('mouseout', function (e) {
+                this.closePopup();
+            });
+        }
+    } else {
+
+        map.setView([30, -40], 1);
+    
+        for (let marker in allMarkers){
+            allMarkers[marker].on('click', function (e) {
+                this.openPopup();
+            });   
+        }
+    }
+
+}
+popupType();
+window.addEventListener('resize', popupType);
