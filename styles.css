@@ -79,7 +79,7 @@ div > .leaflet-popup-content {
     }
 
     #map { 
-        position: sticky;
+        position: relative;
         top: 0;
         min-height: 30%;
         width: 100%;
@@ -94,7 +94,7 @@ div > .leaflet-popup-content {
         width: 100%;
         max-height: 70%;
 
-        position: sticky;
+        position: relative;
         bottom: 0;
         top: 0%;
 
