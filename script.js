@@ -217,7 +217,7 @@ markerWinnipeg.bindPopup('Winnipeg, Manitoba');
 markerSydney.bindPopup('Sydney, Australia');
 markerCairo.bindPopup('Cairo, Egypt');
 markerTrenton.bindPopup('Trenton, Ontario');
-markerHalifax.bindPopup('Halifac, Nova Scotia');
+markerHalifax.bindPopup('Halifax, Nova Scotia');
 markerTampa.bindPopup('Tampa, Florida');
 markerLondonON.bindPopup('London, Ontario');
 markerHollywood.bindPopup('Hollywood, Florida');
