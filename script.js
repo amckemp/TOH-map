@@ -249,7 +249,7 @@ function popupType (){
     if (size > 1085){
 
         map.setView([35, 0], 2.45);
-        
+
         for (let marker in allMarkers){
             allMarkers[marker].on('mouseover', function (e) {
                 this.openPopup();
@@ -261,7 +261,7 @@ function popupType (){
         }
     } else {
 
-        map.setView([30, -40], 1);
+        map.setView([45, -30], 1)
     
         for (let marker in allMarkers){
             allMarkers[marker].on('click', function (e) {
