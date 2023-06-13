@@ -99,6 +99,7 @@ div > .leaflet-popup-content {
         
         text-align: center;
         padding: 1%;
+        padding-bottom: 3%;
     }
     
   }
